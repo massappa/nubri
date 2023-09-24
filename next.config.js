@@ -19,6 +19,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "unsplash.com",
+      },
+      {
+        protocol: "https",
         hostname: "github.com",
       },
       {
@@ -27,7 +31,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "iskzuogcmkzumadqjnbv.supabase.co",
+        hostname: "enznhvirdexlccslbqzo.supabase.co",
       },
     ],
   },
