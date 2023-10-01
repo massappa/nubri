@@ -7,29 +7,29 @@ export const categories: CategoryAttributes[] = [
         slug: '/',
     },
     {
-        id: '4db30a13-2797-4c7d-a0ce-e0c127287a39',
+        id: '9d2c56ec-c65f-4bd8-a153-5e52b0dec778',
         title: 'Science',
         slug: 'science',
     },
     {
-        id: 'c13ae4a7-476c-4608-9b7a-9ec9488c42e4',
+        id: '5fd13c42-b6e0-4e2e-bf7d-c8911e8427d1',
         title: 'Health',
         slug: 'health',
     },
     {
-        id: '7b8781b0-b4fa-40e4-ac23-5310640eecd7',
+        id: '039c8d61-0ac5-47a7-8070-ef0a4de78614',
         title: 'Marketing',
         slug: 'marketing',
     },
     {
-        id: '962f860d-ab0d-4650-ae93-8171c8b47169',
+        id: '5f8a146c-787d-4664-80aa-f78d7183f45e',
         title: 'Technology',
         slug: 'technology',
     },
 ];
 
 export const loginMenu: CategoryAttributes = {
-    id: '962f860d-ab0d-4650-ae93-8171c8b47169',
+    id: '5f8a146c-787d-4664-80aa-f78d7183f45e',
     title: 'Sign in',
     slug: 'login',
 };
