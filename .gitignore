@@ -4,14 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-
+asset
 # testing
 /coverage
-
+app/(main)/_document.tsx
 # next.js
 /.next/
 /out/
-
+components/og/AdSense.tsx
 # production
 /build
 
