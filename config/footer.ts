@@ -4,7 +4,7 @@ import GithubIcon from '@/components/icons/github-contact-icon';
 import { FooterAttributes } from 'types';
 
 export const footerConfig: FooterAttributes = {
-    copyright: '2023 Blog App. All rights reserved.',
+    copyright: '2023 Nubri GmbH. All rights reserved.',
     menus: [
         {
             name: 'Home',
@@ -30,12 +30,12 @@ export const footerConfig: FooterAttributes = {
     socials: [
         {
             name: 'Twitter',
-            href: 'https://twitter.com/timtbdev',
+            href: 'https://twitter.com/aswinpy',
             icon: TwitterIcon,
         },
         {
             name: 'GitHub',
-            href: 'https://github.com/timtbdev/projects',
+            href: 'https://github.com/masapasa/nubri',
             icon: GithubIcon,
         },
     ],

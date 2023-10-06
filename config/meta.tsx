@@ -7,8 +7,8 @@ export const metaData: MetaAttributes = {
   ogTitle: "Use advanced AI to unlock your business intelligence flow",
   author: {
     name: "Aswin",
-    twitterUrl: "https://twitter.com/aswuboy",
-    twitterAddress: "@aswuboy",
+    twitterUrl: "https://twitter.com/aswinpy",
+    twitterAddress: "@aswinpy",
   },
   description:
     "Nubri is a platform that helps you to create your own datalake and use advanced AI to unlock your business intelligence flow.",

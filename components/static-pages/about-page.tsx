@@ -8,25 +8,25 @@ const features = [
     {
         name: 'Loyalty',
         description:
-            'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+            "At Nubri, loyalty isn't just a buzzword; it's a foundational pillar that drives every interaction, project, and long-term relationship we foster. We understand that managing proprietary data is no small feat, and entrusting us with that responsibility is a significant decision for our corporate clients. That's why we're committed to being not just a service provider, but a reliable partner. We invest deeply in understanding your unique needs and challenges, continually adapting our solutions to ensure your data remains secure, accessible, and useful. Our aim is to earn your trust for the long haul, because to us, loyalty means more than just a contract—it's a mutual commitment to shared success.",
         icon: UserGroupIcon,
     },
     {
         name: 'Trust',
         description:
-            'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+            "In the world of corporate data management, trust is non-negotiable. We get it, your data is invaluable, and any misstep can have colossal consequences. That's why at Nubri, we employ state-of-the-art Advanced LLM (Lifelong Learning Machines) to ensure that your data isn't just managed, but managed right. Our team of experts works tirelessly to keep up with the latest security protocols and compliance regulations. We regularly audit our systems and provide transparent reports, ensuring you're never in the dark about how your data is being handled. Our aim is to be a company you can rely on, without a second thought.",
         icon: LockClosedIcon,
     },
     {
         name: 'Compassion',
         description:
-            'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+            "Data management is often seen as a cold, mechanical process, but at Nubri, we believe in bringing a human touch to everything we do. Compassion for us means understanding the very real human elements at play—the stress of meeting regulatory requirements, the pressure to innovate, and the simple need for a listening ear. We're more than just tech support; we're people who genuinely care about your team's well-being. We make it a point to be available for our clients, offering 24/7 support and ensuring that in times of crisis, you're never alone. Compassion is our way of acknowledging that beyond the bytes and bits, there are people counting on us.",
         icon: SparklesIcon,
     },
     {
         name: 'Leadership',
         description:
-            'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+            "Leading the charge in an industry as dynamic as data management requires more than just cutting-edge technology; it requires vision, courage, and the ability to inspire change. Nubri prides itself on being at the forefront of employing Advanced LLM in data management, setting industry benchmarks, and pushing the envelope in what’s possible. We don’t just adapt to industry trends; we aim to be the ones setting them. Our leadership manifests in our innovative solutions, but also in the partnerships we nurture, the talent we cultivate, and the community we build around us. Leadership for us is not about being ahead; it’s about bringing everyone along for the journey toward excellence.",
         icon: UsersIcon,
     },
 ];

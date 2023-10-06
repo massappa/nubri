@@ -6,6 +6,7 @@ import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import { tr } from "date-fns/locale";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Next.js Blog",
+    template: "%s | Nubri",
     default: metaData.title,
     absolute: metaData.absoluteTitle,
   },
@@ -49,13 +50,12 @@ export const metadata: Metadata = {
     viewportFit: "cover",
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    nocache: true,
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: false,
+      noimageindex: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -108,7 +108,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: metaData.ogTitle,
     description: metaData.description,
-    // images: [getOgImageUrl(metaData.title, metaData.subTitle, metaData.tags, '/')],
     images: `${getUrl()}/images/twitter-image.png`,
     creator: metaData.author.twitterAddress,
   },
