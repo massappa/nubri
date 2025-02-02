@@ -1,6 +1,6 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[sql]": {
-        "editor.defaultFormatter": "cweijan.vscode-mysql-client2"
-    }
+    "i18n-ally.localesPaths": [
+        "i18n",
+        "messages"
+    ]
 }

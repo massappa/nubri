@@ -1,108 +1,144 @@
-<p align="center" style="margin-top: 120px">
-  <a href="https://ub.cafe">
-   <img src="https://github.com/timtbdev/sign-dictionary/assets/25026241/2038fd10-f9e7-4035-8c14-28bef92729f9" width="100px" alt="Blog App Logo">
-  </a>
-</p>
+# AI Landing Page & Blog Generator
 
-  <p align="center">
-  Fullstack Blog app built with Next.js 13 & Supabase
-  <br>
-    <a href="https://ub.cafe"><strong>Demo</strong></a> | 
-    <strong>Documentation(Coming soon)</strong></a>
-  </p>
+🚀 AI SaaS 快速出海模板 | AI SaaS ONE CLICK Template
 
-<img width="1040" alt="Cover" src="https://github.com/timtbdev/sign-dictionary/assets/25026241/537b830a-4ea0-40cb-bb26-7b3b744a4fce">
+一站式 AI SaaS 创业模板，内置落地页/博客生成器，支持i18n多语言本，帮助产品快速出海。集成完整用户系统和支付流程，基于 Next.js + Supabase 构建的现代化解决方案。
 
-## 💻 Preview
+## 🌟 主要特性
 
-https://github.com/timtbdev/Next.js-Blog-App/assets/25026241/28c88539-ce40-4283-8239-10c0024bf349
+### AI 生成功能
 
-## 💾 Database Schema
+- 🎨 一键生成专业落地页  && 一键翻译多语言
+- 📝 MDX格式博客文档支持 && 一键翻译多语言
+- 👥 小说角色名字生成器  && 一键翻译多语言
+- 📚 MDX格式文档站支持   && 一键翻译多语言
 
-### Database schema & dummy data: [here](./database_schema/)
+### 系统功能
 
-<img width="992" alt="Screenshot 2023-06-10 at 10 00 18 PM" src="https://github.com/timtbdev/Next.js-Blog-App/assets/25026241/729e2d22-2467-4d5b-9c6c-e6a5ea58c717">
+- 🌍 多语言支持 (i18n)
+- 🔐 第三方登录集成
+  - Google 登录
+  - Supabase 认证
+- 💾 Supabase 数据存储
+- 📱 响应式设计
+- 🎨 基于 Tailwind CSS 的现代UI
 
-## 📊 Google Lighthouse performance statistics
+### 技术栈
 
-<img width="992" alt="Screenshot 2023-06-10 at 10 00 18 PM" src="https://github.com/timtbdev/Next.js-Blog-App/assets/25026241/2a4f693b-5c0d-4647-8444-291e1f635ee7">
+- Next.js
+- Tailwind CSS
+- Supabase
+- i18n
+- TypeScript
 
-## 📚 Tech Stacks
+## 🚀 快速开始
 
-- App Router,
-- Server Actions
-- Server and Client Components
-- Data Fetching, Insertion using [Supabase-JS-Client](https://supabase.com/docs/reference/javascript/introduction)
-- API Routes and Middlewares
-- Cookie based Authentication using [Supabase Auth](https://supabase.com/docs/guides/auth/auth-helpers/nextjs)
-- CMS using [Supabase Database](https://supabase.com/docs/guides/database)
-- Metadata files
-- Open Graph Image Generation using [Vercel/Og](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation)
-- Image Upload using [Supabase-JS-Client](https://supabase.com/docs/reference/javascript/introduction) and [Supabase Storage](https://supabase.com/docs/guides/storage/uploads)
-- Styled using [Tailwind CSS](https://tailwindcss.com/)
-- UI Components using [HeadlessUI](https://headlessui.com), [Radix-UI](https://radix-ui.com), [Shadcn-UI](https://ui.shadcn.com/)
-- WYSIWYG editor using [Novel](https://novel.sh/)
-- Loading, Error, NotFound, Empty pages
-- Sending emails using [NodeMailer](https://nodemailer.com) and [React Email](https://https://react.email/), [Gmail](https://gmail.com)
-- Forms using [React-Hook-Forms](https://www.react-hook-form.com/)
-- Toasts using [React-Hot-Toast](https://react-hot-toast.com/)
-- Validations using [Zod](https://zod.dev)
-- Icons using [HeroIcons](https://heroicons.com/) & [Lucide-Icon](https://lucide.dev/icons/)
-- Newsletter using [ConvertKit](https://convertkit.com/)
-- Drawer using [Vaul](https://vaul.emilkowal.ski/)
-- Written in [TypeScript](https://www.typescriptlang.org/)
+1. 克隆项目
+   ```bash
+   git clone https://github.com/fengyunzaidushi/ship-saas-one-click.git
+   cd ship-saas-one-click
+   ```
+2. 安装依赖
+   ```bash
+   yarn install
+   ```
+3. 配置环境变量
 
-## ⌨️ Code Quality
+```bash
+cp .env.example .env
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
+# 修改下面变量
+# Supabase: https://supabase.com/
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
 
-## 📈 Miscellaneous
+# openai api_key
+OPENAI_API_KEY=
+OPENAI_API_BASE=
 
-- [Vercel Analytics](https://vercel.com/analytics)
+# stripe
+STRIPE_PUBLIC_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
 
-# ⚙️ Getting Started
 
-## Requirements
+# one time price id
+NEXT_PUBLIC_STRIPE_PRICE_ID_BASIC=price_basic_plan_usd
+NEXT_PUBLIC_STRIPE_PRICE_ID_PRO=price_pro_plan_usd
 
-To run this app locally you need
 
-- [Node.js (Version: >=18.x)](https://nodejs.org/en/download/)
-- Node Package Manager NPM - included in Node.js
-- [PostgreSQL (local or remote)](https://www.postgresql.org/download/)
+```
 
-## Developer Quickstart
+4. 启动项目
+   ```bash
+   yarn dev
+   访问 http://localhost:3000 查看效果
+   ```
+5. 配置数据库
+   ```bash
+   # 创建角色表 在supabase sql editor中执行下面文件中的sql:
+   `sql/create_character_payment_table.sql`
+   `sql/create_character_profile_table.sql`
+   ```
 
-Want to get up and running quickly? Follow these steps:
+## 📝 使用说明
 
-- [Clone the repository](https://help.github.com/articles/cloning-a-repository/) it to your local device.
+### AI 落地页生成
 
-  ```sh
-  git clone https://github.com/timtbdev/Next.js-Blog-App.git
-  ```
+- 修改 messages/zh.json 和 messages/en.json 中的内容
+- 一键生成多语言专业落地页（其他语言同理）
 
-- Set up your [Supabase Database](https://supabase.com/docs/guides/database) and Auth wit with [Social Logins](https://supabase.com/docs/guides/auth/social-login)
-- Set up your [ConverKit](https://ihatetomatoes-nextjs-101.vercel.app/post/convertkit-api-variables)
-- Set up your `.env` file using the recommendations in the `.env.example` file.
-- Run `npm installation --legacy-peer-deps` in the root directory
-  ```sh
-  npm installation --legacy-peer-deps
-  ```
-- Run `npm run dev` in the root directory
-- Want it even faster? Just use
-  ```sh
-  npm run d
-  ```
+### api文档、博客等mdx文档批量翻译
 
-That's it! You should now be able to access the app at http://localhost:3000
+- 进入translateblogs/translate目录
+- 修改translate.py中的源语言和目标语言
+- 需要翻译的mdx文档放入进入translateblogs/translate/docs目录下
+- 运行translate.py
+- 翻译后的mdx文档会放入进入translateblogs/translate/translated-docs目录下
 
-Admin dashboard will also be available on http://localhost:300/dashboard
+### 角色名字生成器
 
-## 🙇 Author
+- 访问角色名字生成页面
+- 设置角色参数
+- 生成独特的角色描述
 
-- Tim ([@timtbdev](https://twitter.com/timtbdev))
+### 文档站使用
 
-## License
+- 在 `data/docs` 目录下创建或修改markdown文档
+- 支持MDX格式，可嵌入React组件
+- 自动生成文档目录和导航
+- 一键翻译文档内容为多语言版本
 
-Licensed under the [MIT license](https://github.com/shadcn/taxonomy/blob/main/LICENSE.md).
+## 🔜 开发计划
+
+### 待完善功能
+
+- [x] 支付系统集成
+  - [x] Stripe 支付
+- [x] 自动检测用户语言偏好
+- [ ] 博客mdx格式文章一键生成
+- [ ] 生成的角色名字前台展示
+- [ ] 更多 AI 生成功能
+- [ ] 性能优化
+  
+## 示例项目
+
+- [cursor中文文档](https://cursordocs.com/)
+
+## 🤝 贡献指南
+
+欢迎提交 Pull Request 或创建 Issue。
+
+## 📜 致谢
+
+本项目基于以下开源项目:
+
+- [Pagen AI Landing Page Template](https://github.com/all-in-aigc/pagen-ai-landing-page-template)
+- [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
+
+感谢这些优秀的开源项目！
+
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](LICENSE) 文件

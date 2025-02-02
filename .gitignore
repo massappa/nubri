@@ -4,14 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
-asset
+.yarn/install-state.gz
+
 # testing
 /coverage
-app/(main)/_document.tsx
+
 # next.js
 /.next/
 /out/
-components/og/AdSense.tsx
+
 # production
 /build
 
@@ -26,14 +27,21 @@ yarn-error.log*
 
 # local env files
 .env*.local
-
+.env.development
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+02-app/
+.idea/
+.log
+.contentlayer
 
-#supabase
-ubdotcafe.code-workspace
-/supabase
+*.http
+note.md
+test-webhook.ts
+test*.json
+assistant_snippet_*.txt
+.specstory/
