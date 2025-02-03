@@ -95,7 +95,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
     sortPosts(
       allBlogs
         .filter((p) => p.locale === resolvedParams.locale)
-        .filter((p) => p.date !== undefined) as { date: string }[]
+        .filter((p) => p.date !== undefined) as Blog[]
     )
   )
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
