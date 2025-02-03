@@ -82,6 +82,12 @@ export async function generateStaticParams() {
   return paths
 }
 
+const filterAndAssertBlogs = (blogs: Blog[], locale: string) => {
+  return blogs
+    .filter((post) => post.locale === locale)
+    .filter((post) => post.date !== undefined) as (Blog & { date: string })[]
+}
+
 export default async function Page({ params }: { params: Promise<{ slug: string[], locale: string }> }) {
   const resolvedParams = await params
   const slug = resolvedParams.slug.join('/')
@@ -92,11 +98,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
   }
 
   const sortedCoreContents = allCoreContent(
-    sortPosts(
-      allBlogs
-        .filter((p) => p.locale === resolvedParams.locale)
-        .filter((p) => p.date !== undefined) as (Blog & { date: string })[]
-    )
+    sortPosts(filterAndAssertBlogs(allBlogs, resolvedParams.locale))
   )
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
   if (postIndex === -1) {
