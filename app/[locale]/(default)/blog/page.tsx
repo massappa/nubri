@@ -1,6 +1,6 @@
 import ListLayout from '@/layouts/ListLayoutWithTags'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
-import { allBlogs } from 'contentlayer/generated'
+import { allBlogs, Blog } from 'contentlayer/generated'
 import { genPageMetadata } from 'app/seo'
 
 const POSTS_PER_PAGE = 5
@@ -20,7 +20,9 @@ async function fetchLocalePosts(locale: string) {
   try {
     const posts = allCoreContent(
       sortPosts(
-        allBlogs.filter((post) => post.locale === locale)
+        allBlogs
+          .filter((post) => post.locale === locale)
+          .filter((post) => post.date !== undefined) as (Blog & { date: string })[]
       )
     )
     return posts
@@ -29,6 +31,8 @@ async function fetchLocalePosts(locale: string) {
     return []
   }
 }
+
+
 
 // 计算分页数据
 function getPaginationData(posts: any[], pageNumber: number) {
