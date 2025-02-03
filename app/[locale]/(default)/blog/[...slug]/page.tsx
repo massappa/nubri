@@ -91,7 +91,13 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
     return notFound()
   }
 
-  const sortedCoreContents = allCoreContent(sortPosts(allBlogs.filter((p) => p.locale === resolvedParams.locale)))
+  const sortedCoreContents = allCoreContent(
+    sortPosts(
+      allBlogs
+        .filter((p) => p.locale === resolvedParams.locale)
+        .filter((p) => p.date !== undefined) as { date: string }[]
+    )
+  )
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
   if (postIndex === -1) {
     return notFound()
